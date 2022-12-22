@@ -7,24 +7,24 @@
 }
 .text-green{
     color: green;
-    flex-grow: 1;
+    flex-basis: 50%;
     background-color: greenyellow;
     text-align: center;
 }
 .get-btn{
     padding: 1.5rem 3rem;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 0%);
 }
-
-
 
 /* general classes */
 .d-flex{
     display: flex;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .m-auto{
     margin: auto;
+}
+.w-100{
+    width: 100%;
 }
