@@ -11,18 +11,12 @@
 </head>
 <body>
 
+    <!-- snack1 -->
     <div id="app">
-        <div class="wrapper d-flex">
-            <div class="text-red">
-                <!-- odds -->
-                <h4 v-for="redN in redNums">{{redN}}</h4>
-            </div>
-            <div class="text-green">
-                <!-- even -->
-                <h4 v-for="greenN in greenNums">{{greenN}}</h4>
-            </div>
-        </div>
-        <button @click="getNumber" class="get-btn">Get number</button>
+        <input type="text" v-model="inputName" name="inputName" id="inputName" @keyUp.Enter="checkName()" :disabled="namesList.length !== nNames">
+        <h3 v-if="isNameInList">Welcome home, {{inputName}}</h3>
+        <h3 v-else-if="inputName === ''">type a name</h3>
+        <h3 v-else>You are not in the list {{inputName}}</h3>
     </div>
     
     <!-- vue 3 -->
@@ -30,6 +24,6 @@
     <!-- axios 1.2.2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
     <!-- my script -->
-    <script src="./js/snack1.js"></script>
+    <script src="./js/snack2.js"></script>
 </body>
 </html>
