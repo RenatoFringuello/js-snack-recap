@@ -32,7 +32,16 @@
         <h3 v-else>You are not in the list {{inputName}}</h3> -->
 
         <!-- snack A -->
-    </div>
+        <div class="wrapper d-flex flex-wrap">
+            <div class="chat d-flex flex-column">
+                <h4 v-for="chatMessage in chatMessages"
+                class="message"
+                :class="(chatMessage.status === 'sent') ? 'message-sent' : 'message-received'">{{chatMessage.message}}</h4>
+            </div>
+            <div class="w-100 d-flex">
+                <input class="w-100" type="text" v-model="messageSent" @keyUp.Enter="addMessage(messageSent, 'sent')">
+            </div>
+        </div>
     
     <!-- vue 3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
