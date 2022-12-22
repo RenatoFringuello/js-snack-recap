@@ -1,0 +1,12 @@
+.text-red{
+    color: red;
+    flex-basis: 50%;
+}
+.text-green{
+    color: green;
+    flex-grow: 1;
+}
+
+.d-flex{
+    display: flex;
+}

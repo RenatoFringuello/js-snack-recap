@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+
+    <!-- my-style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="wrapper d-flex">
+            <div class="text-red">
+                <!-- odds -->
+                <h4 v-for="redN in redNums">{{redN}}</h4>
+            </div>
+            <div class="text-green">
+                <!-- even -->
+                <h4 v-for="greenN in greenNums">{{greenN}}</h4>
+            </div>
+        </div>
+        <button @click="getNumber">Get number</button>
+    </div>
+    
+    <!-- vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- axios 1.2.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+    <!-- my script -->
+    <script src="./js/snack1.js"></script>
+</body>
+</html>
