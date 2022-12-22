@@ -6,7 +6,6 @@ createApp({
             namesList: [],
             inputName: '',
             nNames: 10,
-            isNameInList: false,
         }
     },
     methods: {
@@ -23,9 +22,6 @@ createApp({
 
                 })
         },
-        checkName(){
-            this.isNameInList = (this.namesList.includes(this.inputName));
-        }
     },
     created() {
         for (let i = 0; i < this.nNames; i++) {

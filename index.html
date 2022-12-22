@@ -13,8 +13,8 @@
 
     <!-- snack1 -->
     <div id="app">
-        <input type="text" v-model="inputName" name="inputName" id="inputName" @keyUp.Enter="checkName()" :disabled="namesList.length !== nNames">
-        <h3 v-if="isNameInList">Welcome home, {{inputName}}</h3>
+        <input type="text" v-model="inputName" name="inputName" id="inputName" :disabled="namesList.length !== nNames">
+        <h3 v-if="namesList.includes(inputName)">Welcome home, {{inputName}}</h3>
         <h3 v-else-if="inputName === ''">type a name</h3>
         <h3 v-else>You are not in the list {{inputName}}</h3>
     </div>
