@@ -11,12 +11,27 @@
 </head>
 <body>
 
-    <!-- snack1 -->
     <div id="app">
-        <input type="text" v-model="inputName" name="inputName" id="inputName" :disabled="namesList.length !== nNames">
+        <!-- snack1 -->
+        <!-- <div class="wrapper d-flex flex-wrap">
+            <div class="w-100 d-flex">
+                <button class="get-btn m-auto" @click="getNumber">get the number</button>
+            </div>
+            <div class="text-red">
+                <h4 v-for="redN in redNums">{{redN}}</h4>
+            </div>
+            <div class="text-green">
+                <h4 v-for="greenN in greenNums">{{greenN}}</h4>
+            </div>
+        </div> -->
+
+        <!-- snack 2 -->
+        <!-- <input type="text" v-model="inputName" name="inputName" id="inputName" :disabled="namesList.length !== nNames">
         <h3 v-if="namesList.includes(inputName)">Welcome home, {{inputName}}</h3>
         <h3 v-else-if="inputName === ''">type a name</h3>
-        <h3 v-else>You are not in the list {{inputName}}</h3>
+        <h3 v-else>You are not in the list {{inputName}}</h3> -->
+
+        <!-- snack A -->
     </div>
     
     <!-- vue 3 -->
@@ -24,6 +39,9 @@
     <!-- axios 1.2.2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
     <!-- my script -->
-    <script src="./js/snack2.js"></script>
+    <!-- <script src="./js/snack1.js"></script> -->
+    <!-- <script src="./js/snack2.js"></script> -->
+    <script src="./js/snackA.js"></script>
+    <!-- <script src="./js/snackB.js"></script> -->
 </body>
 </html>
