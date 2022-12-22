@@ -1,11 +1,23 @@
 .text-red{
     color: red;
     flex-basis: 50%;
+    background-color: orange;
+    text-align: center;
 }
 .text-green{
     color: green;
     flex-grow: 1;
+    background-color: greenyellow;
+    text-align: center;
 }
+.get-btn{
+    padding: 1.5rem 3rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 
 .d-flex{
     display: flex;
