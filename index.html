@@ -32,7 +32,7 @@
         <h3 v-else>You are not in the list {{inputName}}</h3> -->
 
         <!-- snack A -->
-        <div class="wrapper d-flex flex-wrap">
+        <!-- <div class="wrapper d-flex flex-wrap">
             <div class="chat d-flex flex-column">
                 <h4 v-for="chatMessage in chatMessages"
                 class="message"
@@ -41,8 +41,24 @@
             <div class="w-100 d-flex">
                 <input class="w-100" type="text" v-model="messageSent" @keyUp.Enter="addMessage(messageSent, 'sent')">
             </div>
+        </div> -->
+
+        <!-- snackB -->
+        <div class="wrapper d-flex flex-wrap">
+            <div class="w-100 d-flex">
+                <input class="w-100" type="text" v-model.trim="nNums" @keyUp.Enter="getNumber" :placeholder="inputPlaceholder">
+            </div>
+            <div class="left">
+                <h3 v-for="num in nums">{{num}}</h3>
+                <hr>
+                <h3>{{sum}}</h3>
+            </div>
+            <div class="right">
+                <h3 v-for="i in nums.length">+</h3>
+                <h3>=</h3>
+            </div>
         </div>
-    
+    </div> 
     <!-- vue 3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios 1.2.2 -->
@@ -50,7 +66,7 @@
     <!-- my script -->
     <!-- <script src="./js/snack1.js"></script> -->
     <!-- <script src="./js/snack2.js"></script> -->
-    <script src="./js/snackA.js"></script>
-    <!-- <script src="./js/snackB.js"></script> -->
+    <!-- <script src="./js/snackA.js"></script> -->
+    <script src="./js/snackB.js"></script>
 </body>
 </html>
